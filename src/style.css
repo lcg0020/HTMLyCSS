@@ -78,7 +78,7 @@ footer {
 
 .full-img-container {
     padding: 0; 
-    background-image: url('./img/rest1.png'); /* Ruta de tu imagen */
+    background-image: url('../img/rest1.png'); /* Ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     height: 50vh; /* Ajusta la altura */
@@ -99,6 +99,11 @@ footer {
 }
 .ul-nav li {
     margin-left: 20px; /* Espaciado entre los elementos */
+}
+
+.ul-nav .active a {
+    color: rgb(220, 20, 20); /* Cambia el color del enlace a rojo */
+    font-weight: bold; /* Pone el texto de los elementos en negrita */
 }
 
 .ul-nav a {
