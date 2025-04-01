@@ -13,6 +13,7 @@
     </head>
     
     <body>
+        
         <header>
             <div class="flex-container">
                 <nav>
@@ -27,26 +28,94 @@
         </header>
         
         <main>
-            <section class="full-img-container">
+            <section class="full-img-container" id="carousel">
                 <div class="text-container">
                     <h1 class="texto-foto">La Piazza</h1>
                     <p class="texto-foto">Un espacio para disfrutar de la verdadera comida italiana.</p>
                 </div>
             </section>
+
+            <section class="flex-container">
+                <h2>Quiénes somos</h2>
+                <div class="grid">
+                    <div class="texto">
+                        <p>Bienvenidos a La Piazza, un rincón de Italia en el corazón de Madrid. Nuestro restaurante te tansportará al ambiente vibrante y acogedor de las plazas italianas, donde la comida une a la gente y cada comida es una celebración.</p>
+                        <p>Nuestros platos se preparan con ingredientes frescos y de la más alta calidad, desde nuestra pasta artesanal y nuestras pizzas al horno de leña, hasta nuestros exquisitos vinos italianos.</p>
+                        <p>Gracias por permitirnos ser parte de tus momentos especiales. Nos encantará darte la bienvenida y compartir contigo la magia de la cocina italiana.</p>
+                    </div>
+                    <div class="imagen-pasar-container">
+                        <button class="flechas" id="btn-prev">&larr;</button>
+                        <img id="imagen_quienes" src="../img/rest1.png" alt="Imagen 1">
+                        <button class="flechas" id="btn-next">&rarr;</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex-container">
+                <h2>Menús</h2>
+                <div class="grid-invertido">
+                    <div class="imagen-pasar-container">
+                        <button class="flechas" id="btn-prev-menu">&larr;</button>
+                        <img id="imagen_menu" src="../img/rest5.png" alt="Imagen 1">
+                        <button class="flechas" id="btn-next-menu">&rarr;</button>
+                    </div>
+                    <div class="texto">
+                        <h3>Menú bambinos</h3>
+                        <p>A elegir entre pizza o spaghetti.</p>
+                        <h3>Menú del chef</h3>
+                        <p>A elegir entre 3 entrantes + pizza napolitana o pasta casera + postre italiano.</p>
+                        <h3>Menú festival</h3>
+                        <p>A elegir entre 6 entrantes + ensalada italiana + pizza napolitana, pasta casera o salmón al pesto + postre italiano.</p>
+                        <button id="btn-saber-mas" class="saber-mas">Saber más</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex-container">
+                <h2>Chef</h2>
+                <div class="grid">
+                    <div class="texto">
+                        <p>Es un verdadero honor para mí, Fabbio Poggi, darles la bienvenida a La Piazza.</p>
+                        <p>Nací en Napoles, ciudad conocida por su riqueza culinaria y tradiciones gastronómicas que se transmiten de generación en generación. Allí aprendí los secretos de la cocina de la mano de mi familia, y desde entonces he dedicado mi vida a perfeccionar el arte de combinar sabores auténticos con creatividad moderna.</p>
+                        <p>Cada plato que preparo en La Piazza es una expresión de mi amor por la cocina italiana, por lo que estaré encantado de servirlos y transportarlos a Italia sin necesidad de salir de Madrid.</p>
+                        <p>Con cariño y pasión, Fabbio Poggi, Chef Ejecutivo de La Piazza</p>
+                        <button id="btn-saber-mas" class="saber-mas">Saber más</button>
+                    </div>
+                    <div class="imagen-pasar-container">
+                        <button class="flechas" id="btn-prev-chef">&larr;</button>
+                        <img id="imagen_chef" src="../img/rest1.png" alt="Imagen 1">
+                        <button class="flechas" id="btn-next-chef">&rarr;</button>
+                    </div>
+                </div> 
+            </section>
         </main>
 
         <footer>
-            <div class="flex-container">
+            <div class="tres-columnas">
                 <div>
-                    <p>Horario</p>
+                    <h3>Horario</h3>
+                    <div class="dos-columnas">
+                        <div>
+                            <p class="p-footer">Lunes:</p>
+                            <p class="p-footer">Martes a domingo</p>
+                        </div>
+                        <div>
+                            <p class="p-footer">Cerrado</p>
+                            <p class="p-footer">13:00-16:00 y 20:00-23:00</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
-                    <p>Contacto</p>
+                    <h3>Contacto</h3>
+                    <p class="p-footer">Pl. Pdte. Cárdenas, 1, Chamartín, 28036 Madrid</p>
+                    <p class="p-footer">Reservas: 910 123 456</p>
+                    <p class="p-footer">Email: info@lapiazzarestaurante.com</p>
                 </div>
 
                 <div>
-                    <div class="right-images">
+                    <h3>Síguenos</h3>
+                    <div class="dos-columnas">
                         <a href="#">
                             <img src="../img/instagram.svg" alt="Instagram">
                         </a>
@@ -58,5 +127,9 @@
             </div>
             
         </footer>
+        <script src="../scripts/carousel-script.js"></script>
+        <script src="../scripts/quienessomos-script.js"></script>
+        <script src="../scripts/menu-script.js"></script>
+        <script src="../scripts/chef-script.js"></script>
     </body>
 </html>
