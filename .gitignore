@@ -1,0 +1,11 @@
+# Ignorar la carpeta de módulos de Node.js
+node_modules/
+
+# Ignorar la caché de Parcel
+.parcel-cache/
+
+# Ignorar la carpeta de distribución
+dist/
+
+# Ignorar todos los archivos con extensión .log
+*.log
