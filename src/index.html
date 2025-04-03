@@ -8,14 +8,16 @@
         <meta name="LaPiazza" content="Esta es la página principal de inicio de Restaurante La Piazza">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Index</title>
-        <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
+        <link rel="icon" href="../img/favicon.jpg" type="image/x-icon"/>
         <link rel="stylesheet" href="style.css" />
     </head>
     
     <body>
-        
         <header>
-            <div class="flex-container">
+            <div class="dos-columnas-header">
+                <a href="index.html">
+                    <img src="../img/favicon.jpg" alt="La Piazza logotipo" class="logo">
+                </a>
                 <nav>
                     <ul class="ul-nav">
                         <li class="active"><a href="index.html">Principal</a></li>
@@ -39,8 +41,8 @@
                 <h2>Quiénes somos</h2>
                 <div class="grid">
                     <div class="texto">
-                        <p>Bienvenidos a La Piazza, un rincón de Italia en el corazón de Madrid. Nuestro restaurante te tansportará al ambiente vibrante y acogedor de las plazas italianas, donde la comida une a la gente y cada comida es una celebración.</p>
-                        <p>Nuestros platos se preparan con ingredientes frescos y de la más alta calidad, desde nuestra pasta artesanal y nuestras pizzas al horno de leña, hasta nuestros exquisitos vinos italianos.</p>
+                        <p>Bienvenidos a <strong>La Piazza</strong>, un rincón de Italia en el corazón de Madrid. Nuestro restaurante te tansportará al ambiente vibrante y acogedor de las plazas italianas, donde la comida une a la gente y cada comida es una celebración.</p>
+                        <p>Nuestros platos se preparan con ingredientes frescos y de la más alta calidad, desde nuestra <strong>pasta artesanal</strong> y nuestras <strong>pizzas al horno de leña</strong>, hasta nuestros exquisitos <strong>postres italianos</strong>.</p>
                         <p>Gracias por permitirnos ser parte de tus momentos especiales. Nos encantará darte la bienvenida y compartir contigo la magia de la cocina italiana.</p>
                     </div>
                     <div class="imagen-pasar-container">
@@ -65,8 +67,8 @@
                         <h3>Menú del chef</h3>
                         <p>A elegir entre 3 entrantes + pizza napolitana o pasta casera + postre italiano.</p>
                         <h3>Menú festival</h3>
-                        <p>A elegir entre 6 entrantes + ensalada italiana + pizza napolitana, pasta casera o salmón al pesto + postre italiano.</p>
-                        <button id="btn-saber-mas" class="saber-mas">Saber más</button>
+                        <p>A elegir entre 6 entrantes + ensalada italiana o pasta casera + carne o pescado + postre italiano.</p>
+                        <a href="menus.html" class="saber-mas">Saber más</a>
                     </div>
                 </div>
             </section>
@@ -75,11 +77,11 @@
                 <h2>Chef</h2>
                 <div class="grid">
                     <div class="texto">
-                        <p>Es un verdadero honor para mí, Fabbio Poggi, darles la bienvenida a La Piazza.</p>
+                        <p>Es un verdadero honor para mí, <strong lang="it">Rossi Giordano</strong>, darles la bienvenida a a <span lang="it">La Piazza</span>.</p>
                         <p>Nací en Napoles, ciudad conocida por su riqueza culinaria y tradiciones gastronómicas que se transmiten de generación en generación. Allí aprendí los secretos de la cocina de la mano de mi familia, y desde entonces he dedicado mi vida a perfeccionar el arte de combinar sabores auténticos con creatividad moderna.</p>
                         <p>Cada plato que preparo en La Piazza es una expresión de mi amor por la cocina italiana, por lo que estaré encantado de servirlos y transportarlos a Italia sin necesidad de salir de Madrid.</p>
-                        <p>Con cariño y pasión, Fabbio Poggi, Chef Ejecutivo de La Piazza</p>
-                        <button id="btn-saber-mas" class="saber-mas">Saber más</button>
+                        <p>Con cariño y pasión, Rossi Giordano, Chef Ejecutivo de La Piazza</p>
+                        <a href="chef.html" class="saber-mas">Saber más</a>
                     </div>
                     <div class="imagen-pasar-container">
                         <button class="flechas" id="btn-prev-chef">&larr;</button>
@@ -91,13 +93,19 @@
         </main>
 
         <footer>
-            <div class="tres-columnas">
+            <div class="cuatro-columnas">
+                <div>
+                    <a href="index.html">
+                        <img src="../img/logo-byn.jpg" alt="La Piazza logotipo" class="logo">
+                    </a>
+                </div>
+                
                 <div>
                     <h3>Horario</h3>
                     <div class="dos-columnas">
                         <div>
                             <p class="p-footer">Lunes:</p>
-                            <p class="p-footer">Martes a domingo</p>
+                            <p class="p-footer">Martes a domingo:</p>
                         </div>
                         <div>
                             <p class="p-footer">Cerrado</p>
@@ -108,9 +116,11 @@
 
                 <div>
                     <h3>Contacto</h3>
-                    <p class="p-footer">Pl. Pdte. Cárdenas, 1, Chamartín, 28036 Madrid</p>
-                    <p class="p-footer">Reservas: 910 123 456</p>
-                    <p class="p-footer">Email: info@lapiazzarestaurante.com</p>
+                    <ul>
+                        <li><strong>Teléfono:</strong> +34 910 123 456</li>
+                        <li><strong>Correo Electrónico:</strong> <a href="mailto:info@lapiazzarestaurante.com" class="a-footer">info@lapiazzarestaurante.com</a></li>
+                        <li><strong>Dirección:</strong> Pl. Pdte. Cárdenas, 1, Chamartín, 28036 Madrid</li>
+                    </ul>
                 </div>
 
                 <div>
@@ -125,11 +135,10 @@
                     </div>
                 </div>
             </div>
-            
         </footer>
-        <script src="../scripts/carousel-script.js"></script>
-        <script src="../scripts/quienessomos-script.js"></script>
-        <script src="../scripts/menu-script.js"></script>
-        <script src="../scripts/chef-script.js"></script>
+        <script src="./scripts/carousel-script.js"></script>
+        <script src="./scripts/quienessomos-script.js"></script>
+        <script src="./scripts/menu-script.js"></script>
+        <script src="./scripts/chef-script.js"></script>
     </body>
 </html>

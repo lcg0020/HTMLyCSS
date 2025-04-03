@@ -58,13 +58,13 @@ body {
     flex-direction: column; /* Coloca los elementos en columna */
     justify-content: center; /* Centra verticalmente el contenido */
     min-height: 100vh;
-    background-color: rgb(242, 242, 230);
+    background-color: #f7f9ec;
 }
 
-footer {
+footer, .a-footer {
     background-color:rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .flex-container {
@@ -78,9 +78,9 @@ footer {
 }
 
 .text-container {
-    text-align: center; /* Centra el texto dentro del contenedor */
     padding-left: 3rem;
     padding-right: 3rem;
+    padding-bottom: 2rem;
 }
 
 .full-img-container {
@@ -93,6 +93,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: left;
+}
+
+.img-container-menu, .img-container-menu img{
+    max-width: 100%; /* Limita el ancho de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio inferior causado por la propiedad inline de las imágenes */
+    object-fit: contain; /* Ajusta la imagen al contenedor sin recortarla */
 }
 
 .grid, .grid-invertido {
@@ -162,20 +169,23 @@ footer {
 }
 
 .saber-mas {
+    text-decoration: none;
+    text-align: center;
     margin-top: 1rem; /* Espaciado respecto a la imagen */
     padding: 0.5rem 1rem; /* Ajusta el tamaño del botón */
-    font-size: 1rem; /* Tamaño del texto */
-    background-color: rgb(220, 20, 20); /* Color del botón */
+    font-size: 1.2rem; /* Tamaño del texto */
+    background-color: rgb(204, 81, 32); /* Color del botón */
     color: white; /* Color del texto */
     border: none; /* Elimina bordes */
     border-radius: 5px; /* Botones redondeados */
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    display: inline-block; /* Asegura que el botón se comporte como un elemento en línea */
     width: 20%;
     height: 40px;
 }
 
 .saber-mas:hover {
-    background-color: #a30000; /* Color más oscuro al pasar el ratón */
+    background-color: rgba(204, 81, 32, 0.5); /* Color al pasar el ratón */
 }
 
 .ul-nav {
@@ -191,7 +201,7 @@ footer {
 }
 
 .ul-nav .active a {
-    color: rgb(220, 20, 20); /* Cambia el color del enlace a rojo */
+    color: rgb(204, 81, 32); /* Cambia el color del enlace a rojo */
     font-weight: bold; /* Pone el texto de los elementos en negrita */
 }
 
@@ -202,15 +212,16 @@ footer {
 }
 
 .ul-nav li a:hover {
-    color:rgb(220, 20, 20); /* Cambia el color al pasar el mouse */
+    color:rgba(204, 81, 32, 0.5); /* Cambia el color al pasar el ratón */
 }
+
+
 
 .dos-columnas {
     display: grid; /* Activa CSS Grid */
     grid-template-columns: 1fr 1fr; /* Crea dos columnas iguales */
     gap: 1rem; /* Espaciado entre las columnas */
     align-items:flex-start; /* Alinea verticalmente al centro */
-    text-align: center; /* Centra el texto en las celdas */
 }
 
 .tres-columnas {
@@ -219,4 +230,140 @@ footer {
     gap: 1rem; /* Espaciado entre las columnas */
     align-items:flex-start; /* Alinea verticalmente los elementos al centro */
     text-align: center; /* Centra el texto en las celdas */
+}
+
+.cuatro-columnas {
+    display: grid; /* Activa CSS Grid */
+    grid-template-columns: 0.5fr 1.5fr 2.5fr 1fr; /* El ancho de cada columna se ajusta al contenido */
+    gap: 1rem; /* Espaciado entre las columnas */
+    align-items: flex-start; /* Alinea verticalmente los elementos */
+    text-align: center; /* Centra el texto en las celdas */
+}
+
+.dos-columnas-header {
+    display: flex; /* Utiliza flexbox para diseño flexible */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Acomoda elementos a ambos lados */
+    padding-right: 2rem; /* Espaciado a la derecha del menú */
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+form label {
+    display: block;
+}
+  
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+form button {
+    background-color: #6d9e31;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+form button:hover {
+    background-color: #5b8528;
+}
+
+/* Opciones de contacto */
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+  
+ul li {
+    margin: 5px 0;
+}
+
+.mapa-google {
+    width: 100%;
+    height: 400px;
+    border: 0; /* Sin bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    margin: 20px 0; /* Espaciado alrededor del mapa */
+}
+
+.figcaption-left{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+figure {
+    margin: auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%; /* Ancho del contenedor */
+    padding-top: 56.25%; /* Proporción de 16:9 (altura / ancho * 100) */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Elimina el borde */
+}
+
+.link{
+    color: rgb(204, 81, 32) ;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: rgba(204, 81, 32, 0.5) ; 
+}
+
+.link::after{
+    content: ''; /* Vacío */
+    display: inline-block; /* Necesario para que funcione background-image */
+    width: 10px; /* Ancho de la imagen */
+    height: 10px; /* Altura de la imagen */
+    background-image: url('../img/external-link.svg'); /* Imagen del link */
+    background-size: contain; /* Se ajusta dentro del elemento */
+    background-repeat: no-repeat; /* No se repite */
+}
+
+.logo {
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Mantiene las proporciones originales */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se coloquen en una columna */
+    justify-content: space-between; /* Espacia los elementos de manera que el botón se mantenga al final */
+    height: 100%; /* Altura */
+    background-color: rgb(255, 255, 255);
+    padding: 10px; /* Espacio interno */
+}
+
+.precio {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.pregunta {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
 }

@@ -8,13 +8,16 @@
         <meta name="LaPiazza" content="Esta es la página de contacto de Restaurante La Piazza">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
-        <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
+        <link rel="icon" href="../img/favicon.jpg" type="image/x-icon"/>
         <link rel="stylesheet" href="style.css" />
     </head>
     
     <body>
         <header>
-            <div class="flex-container">
+            <div class="dos-columnas-header">
+                <a href="index.html">
+                    <img src="../img/favicon.jpg" alt="La Piazza logotipo" class="logo">
+                </a>
                 <nav>
                     <ul class="ul-nav">
                         <li><a href="index.html">Principal</a></li>
@@ -27,26 +30,79 @@
         </header>
         
         <main>
-            <section class="full-img-container">
+            <section>
                 <div class="text-container">
-                    <h1 class="texto-foto">La Piazza</h1>
-                    <p class="texto-foto">Un espacio para disfrutar de la verdadera comida italiana.</p>
+                    <h2>Contáctanos</h2>
+                    <p>Estamos aquí para responder tus dudas. Llena el formulario a continuación o utiliza nuestras opciones de contacto directo.</p>
+                    <form action="enviar_formulario.php" method="POST">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+                        <button type="submit">Enviar</button>
+                    </form>
                 </div>
             </section>
-        </main>
+        
+            <section>
+                <div class="text-container">
+                    <h2>Opciones de Contacto</h2>
+                        <ul>
+                            <li><strong>Teléfono:</strong> +34 910 123 456</li>
+                            <li><strong>Correo Electrónico:</strong> contacto@restaurantedelicias.com</li>
+                            <li><strong>Dirección:</strong> Pl. Pdte. Cárdenas, 1, Chamartín, 28036 Madrid</li>
+                        </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="text-container">
+                    <h2>Cómo llegar</h2>
+                    <iframe class="mapa-google"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.123456789012!2d-3.678123456789012!3d40.45678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sPl.%20Pdte.%20C%C3%A1rdenas%2C%201%2C%20Chamart%C3%ADn%2C%2028036%20Madrid!5e0!3m2!1ses!2ses!4v1234567890123"
+                        allowfullscreen=""
+                        loading="lazy">
+                  </iframe> 
+                </div>
+            </section>
+          </main>
 
         <footer>
-            <div class="flex-container">
+            <div class="cuatro-columnas">
                 <div>
-                    <p>Horario</p>
+                    <a href="index.html">
+                        <img src="../img/logo-byn.jpg" alt="La Piazza logotipo" class="logo">
+                    </a>
+                </div>
+                
+                <div>
+                    <h3>Horario</h3>
+                    <div class="dos-columnas">
+                        <div>
+                            <p class="p-footer">Lunes:</p>
+                            <p class="p-footer">Martes a domingo:</p>
+                        </div>
+                        <div>
+                            <p class="p-footer">Cerrado</p>
+                            <p class="p-footer">13:00-16:00 y 20:00-23:00</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
-                    <p>Contacto</p>
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><strong>Teléfono:</strong> +34 910 123 456</li>
+                        <li><strong>Correo Electrónico:</strong> <a href="mailto:info@lapiazzarestaurante.com" class="a-footer">info@lapiazzarestaurante.com</a></li>
+                        <li><strong>Dirección:</strong> Pl. Pdte. Cárdenas, 1, Chamartín, 28036 Madrid</li>
+                    </ul>
                 </div>
 
                 <div>
-                    <div class="right-images">
+                    <h3>Síguenos</h3>
+                    <div class="dos-columnas">
                         <a href="#">
                             <img src="../img/instagram.svg" alt="Instagram">
                         </a>
@@ -56,7 +112,6 @@
                     </div>
                 </div>
             </div>
-            
         </footer>
     </body>
 </html>
