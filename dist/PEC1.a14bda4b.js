@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("carousel"),n=["../img/rest1.png","../img/rest2.png","../img/rest3.png","../img/rest4.png","../img/rest5.png","../img/rest6.png","../img/rest7.png","../img/rest8.png","../img/rest9.png","../img/rest10.png"],t=0;function g(){e.style.backgroundImage="url(".concat(n[t],")"),t=(t+1)%n.length}setInterval(g,5e3),g()});
+//# sourceMappingURL=PEC1.a14bda4b.js.map
