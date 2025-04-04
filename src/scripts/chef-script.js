@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const images = [
         '../img/chef1.jpg',
-        '../img/chef2.jpeg'
+        '../img/chef2.jpg'
     ];
 
     let currentIndex = 0;
