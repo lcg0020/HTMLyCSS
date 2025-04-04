@@ -189,7 +189,7 @@ footer, .a-footer {
     border-radius: 5px; /* Redondea las esquinas del botón para darle un diseño más amigable */
     cursor: pointer; /* Cambia el cursor a forma de mano al pasar sobre el botón, indicando que es interactivo */
     display: inline-block; /* Permite que el botón se comporte como un elemento en línea con capacidad de ajustar su tamaño */
-    width: 30%; /* Ajusta el ancho del botón al 30% del contenedor */
+    width: 40%; /* Ajusta el ancho del botón al 30% del contenedor */
     height: 40px; /* Establece una altura fija para mantener la consistencia visual */
 }
 
@@ -232,6 +232,13 @@ footer, .a-footer {
     align-items:flex-start; /* Alinea verticalmente al centro */
 }
 
+.dos-columnas-footer {
+    display: grid; /* Activa CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas (Móviles) */
+    gap: 1rem; /* Espaciado entre las columnas */
+    align-items:flex-start; /* Alinea verticalmente al centro */
+}
+
 .tres-columnas {
     display: grid; /* Activa CSS Grid */
     grid-template-columns: 1fr; /* Crea una sola columna (Móviles y Tablets) */
@@ -242,7 +249,7 @@ footer, .a-footer {
 
 .cuatro-columnas {
     display: grid; /* Activa CSS Grid */
-    grid-template-columns: 1fr 1fr; /* Crea dos columnas iguales (Móviles) */
+    grid-template-columns: 1fr; /* Crea una columna (Móviles) */
     gap: 0.5rem; /* Espaciado entre las columnas */
     align-items: flex-start; /* Alinea verticalmente los elementos */
     text-align: center; /* Centra el texto en las celdas */
@@ -403,6 +410,11 @@ figure {
         grid-template-columns: 1fr 1fr; /* Crea dos columnas iguales */
         gap: 1rem; /* Espaciado entre las columnas */
     }
+
+    .cuatro-columnas {
+        grid-template-columns: 1fr 1fr; /* Crea dos columnas iguales (Tablets) */
+        gap: 1rem; /* Espaciado entre las columnas */
+    }
 }
 
 /* Ordenadores */ 
@@ -428,10 +440,7 @@ figure {
     }
 
     .cuatro-columnas {
-        display: grid; /* Activa CSS Grid */
         grid-template-columns: 0.5fr 1.5fr 2.5fr 1fr; /* El ancho de cada columna se ajusta al contenido */
         gap: 1rem; /* Espaciado entre las columnas */
-        align-items: flex-start; /* Alinea verticalmente los elementos */
-        text-align: center; /* Centra el texto en las celdas */
     }
 }

@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnNextMenu  = document.getElementById("btn-next-menu");
 
     const images = [
-        '/img/rest5.png',
-        '/img/rest6.png',
-        '/img/rest7.png',
-        '/img/rest8.png',
-        '/img/rest9.png',
-        '/img/rest10.png'
+        '../img/rest5.png',
+        '../img/rest6.png',
+        '../img/rest7.png',
+        '../img/rest8.png',
+        '../img/rest9.png',
+        '../img/rest10.png'
     ];
 
     let currentIndex = 0;
