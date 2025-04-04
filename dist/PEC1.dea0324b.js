@@ -1,2 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("carousel"),t=["../img/rest1.png","../img/rest2.png","../img/rest3.png","../img/rest4.png","../img/rest5.png","../img/rest6.png","../img/rest7.png","../img/rest8.png","../img/rest9.png","../img/rest10.png"],g=0;function n(){e.style.backgroundImage=`url(${t[g]})`,g=(g+1)%t.length}setInterval(n,5e3),n()});
-//# sourceMappingURL=PEC1.dea0324b.js.map

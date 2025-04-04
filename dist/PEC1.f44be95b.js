@@ -1,2 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("imagen_menu"),n=document.getElementById("btn-prev-menu"),t=document.getElementById("btn-next-menu"),g=["../img/rest5.png","../img/rest6.png","../img/rest7.png","../img/rest8.png","../img/rest9.png","../img/rest10.png"],m=0;function i(){e.src=g[m]}n.addEventListener("click",function(){m=(m-1+g.length)%g.length,i()}),t.addEventListener("click",function(){m=(m+1)%g.length,i()}),i()});
-//# sourceMappingURL=PEC1.f44be95b.js.map
