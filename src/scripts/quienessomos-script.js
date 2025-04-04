@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnNext = document.getElementById("btn-next");
 
     const images = [
-        '../img/rest1.png',
-        '../img/rest2.png',
-        '../img/rest3.png',
-        '../img/rest4.png'
+        '/img/rest1.png',
+        '/img/rest2.png',
+        '/img/rest3.png',
+        '/img/rest4.png'
     ];
 
     let currentIndex = 0;
