@@ -182,7 +182,7 @@ footer, .a-footer {
     text-align: center; /* Alinea el texto del botón al centro */
     margin-top: 1rem; /* Añade separación vertical con respecto al elemento superior, como una imagen */
     padding: 0.5rem 1rem; /* Establece el espacio interno del botón: arriba/abajo 0.5rem y laterales 1rem */
-    font-size: 1.2rem; /* Ajusta el tamaño del texto para hacerlo fácilmente legible */
+    font-size: 1rem; /* Ajusta el tamaño del texto para hacerlo fácilmente legible */
     background-color: rgb(204, 81, 32); /* Aplica un color naranja oscuro al fondo del botón */
     color: white; /* Establece el color blanco para el texto, asegurando contraste con el fondo */
     border: none; /* Elimina bordes alrededor del botón para una apariencia más limpia */
