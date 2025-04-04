@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnNextChef  = document.getElementById("btn-next-chef");
 
     const images = [
-        '../../img/chef1.jpg',
-        '../../img/chef2.jpg'
+        '../img/chef1.jpg',
+        '../img/chef2.jpg'
     ];
 
     let currentIndex = 0;
