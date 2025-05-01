@@ -5,7 +5,7 @@ node_modules/
 .parcel-cache/
 
 # Ignorar la carpeta de distribución
-# dist/
+#dist/
 
 # Ignorar todos los archivos con extensión .log
 *.log

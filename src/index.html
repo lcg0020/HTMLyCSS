@@ -46,9 +46,9 @@
                         <p>Gracias por permitirnos ser parte de tus momentos especiales. Nos encantará darte la bienvenida y compartir contigo la magia de la cocina italiana.</p>
                     </div>
                     <div class="imagen-pasar-container">
-                        <button class="flechas" id="btn-prev">&larr;</button>
+                        <button class="flechas" id="btn-prev-quienes">&larr;</button>
                         <img id="imagen_quienes" src="../img/rest1.png" alt="Imagen 1">
-                        <button class="flechas" id="btn-next">&rarr;</button>
+                        <button class="flechas" id="btn-next-quienes">&rarr;</button>
                     </div>
                 </div>
             </section>
@@ -58,7 +58,11 @@
                 <div class="grid-invertido">
                     <div class="imagen-pasar-container">
                         <button class="flechas" id="btn-prev-menu">&larr;</button>
-                        <img id="imagen_menu" src="../img/rest5.png" alt="Imagen 1">
+                        <img id="imagen_menu" 
+                            src="../img/rest5_small.png" 
+                            srcset="../img/rest5_medium.png 768w, ../img/rest5_large.png 1024w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 30vw"
+                            alt="Imagen del menú">
                         <button class="flechas" id="btn-next-menu">&rarr;</button>
                     </div>
                     <div class="texto">
@@ -85,7 +89,11 @@
                     </div>
                     <div class="imagen-pasar-container">
                         <button class="flechas" id="btn-prev-chef">&larr;</button>
-                        <img id="imagen_chef" src="../img/chef1.webp" alt="Imagen 1">
+                        <img id="imagen_chef" 
+                            src="../img/chef1_small.webp" 
+                            srcset="../img/chef1_medium.webp 768w, ../img/chef1.webp 1024w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 30vw"
+                            alt="Imagen del chef">
                         <button class="flechas" id="btn-next-chef">&rarr;</button>
                     </div>
                 </div> 

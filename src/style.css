@@ -109,7 +109,7 @@ footer, .a-footer {
 }
 
 .img-container-menu img {
-    max-width: 100%; /* Limita el ancho de la imagen */
+    width: 100%; /* Ancho de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     object-fit: contain; /* Ajusta la imagen sin recortarla */
     display: block; /* Elimina cualquier espacio no deseado */
@@ -128,8 +128,8 @@ footer, .a-footer {
     text-align: justify; /* Ajusta alineación del texto */
 }
 
-.imagen img {
-    max-width: 100%; /* Limita el ancho máximo de la imagen al tamaño del contenedor para evitar que sobresalga */
+.imagen picture, .imagen img {
+    width: 100%; /* La imagen siempre ocupa todo el contenedor. */
     height: auto; /* Mantiene las proporciones originales de la imagen al ajustar la altura automáticamente */
     object-fit: cover; /* Hace que la imagen llene el contenedor y recorte cualquier exceso, preservando una apariencia equilibrada */
 }
@@ -139,6 +139,13 @@ footer, .a-footer {
     display: flex; /* Activa Flexbox para organizar los elementos dentro del contenedor */
     justify-content: center; /* Centra los elementos horizontalmente dentro del contenedor */
     align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
+}
+
+.imagen-pasar-container img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen evitando distorsiones */
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin perder proporción */
+    display: block; /* Evita espacios adicionales debajo de la imagen al tratarla como un bloque */
 }
 
 .flechas {
@@ -159,13 +166,13 @@ footer, .a-footer {
     color: black; /* Modifica el color del texto a negro para mantener un contraste claro con el nuevo fondo */
 }
 
-#btn-prev, #btn-prev-menu, #btn-prev-chef {
+#btn-prev-quienes, #btn-prev-menu, #btn-prev-chef {
     left: 10px; /* Coloca los botones 10px hacia la izquierda desde el borde del contenedor */
     top: 50%; /* Alinea los botones verticalmente al centro del contenedor */
     transform: translateY(-50%); /* Ajusta la posición vertical para asegurar que los botones estén perfectamente centrados */
 }
 
-#btn-next, #btn-next-menu, #btn-next-chef {
+#btn-next-quienes, #btn-next-menu, #btn-next-chef {
     right: 10px; /* Coloca los botones 10px hacia la derecha desde el borde del contenedor */
     top: 50%; /* Alinea los botones verticalmente al centro del contenedor */
     transform: translateY(-50%); /* Ajusta la posición vertical para que los botones queden perfectamente centrados */
