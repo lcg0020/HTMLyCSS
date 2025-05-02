@@ -175,27 +175,6 @@ footer, .a-footer {
   height: auto;
 }
 
-.saber-mas {
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  white-space: nowrap;
-  background-color: #cc5120;
-  border: none;
-  border-radius: 5px;
-  width: auto;
-  height: auto;
-  margin-top: 1rem;
-  padding: .5rem 1rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.saber-mas:hover {
-  background-color: #cc512080;
-}
-
 .ul-nav {
   text-transform: uppercase;
   flex-direction: column;
@@ -381,6 +360,42 @@ figure {
   padding-top: 1rem;
   padding-bottom: 2rem;
   font-size: 1rem;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.saber-mas {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #cc5120;
+  border: none;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+  animation: 1.5s ease-in-out infinite pulsar;
+  display: inline-block;
+}
+
+.saber-mas:hover {
+  background-color: #cc5120b3;
 }
 
 @media (width >= 768px) {

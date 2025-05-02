@@ -184,27 +184,6 @@ footer, .a-footer {
     object-fit: cover; /* Escala las imágenes para llenar el contenedor, recortando si es necesario para mantener proporciones equilibradas */
 }
 
-.saber-mas {
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
-    text-align: center; /* Alinea el texto del botón al centro */
-    margin-top: 1rem; /* Añade separación vertical con respecto al elemento superior, como una imagen */
-    padding: 0.5rem 1rem; /* Establece el espacio interno del botón: arriba/abajo 0.5rem y laterales 1rem */
-    font-size: 1.2rem; /* Ajusta el tamaño del texto para hacerlo fácilmente legible */
-    background-color: rgb(204, 81, 32); /* Aplica un color naranja oscuro al fondo del botón */
-    color: white; /* Establece el color blanco para el texto, asegurando contraste con el fondo */
-    border: none; /* Elimina bordes alrededor del botón para una apariencia más limpia */
-    border-radius: 5px; /* Redondea las esquinas del botón para darle un diseño más amigable */
-    cursor: pointer; /* Cambia el cursor a forma de mano al pasar sobre el botón, indicando que es interactivo */
-    display: inline-block; /* Permite que el botón se comporte como un elemento en línea con capacidad de ajustar su tamaño */
-    width: auto; /* Ajusta automáticamente el ancho al contenido */
-    height: auto; /* Ajusta la altura según el texto */
-    white-space: nowrap; /* Evita el salto de línea del texto */
-}
-
-.saber-mas:hover {
-    background-color: rgba(204, 81, 32, 0.5); /* Color al pasar el ratón */
-}
-
 .ul-nav {
     display: flex; /* Utiliza flexbox */
     flex-direction: column; /* Coloca los elementos en columna */
@@ -390,6 +369,34 @@ figure {
     padding-top: 1rem; /* Añade espacio en la parte superior para separación visual */
     padding-bottom: 2rem; /* Añade espacio extra en la parte inferior para mayor separación */
     text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.saber-mas {
+    display: inline-block; /* Permite que el botón se comporte como un elemento en línea con capacidad de ajustar su tamaño */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    font-size: 1.2rem; /* Tamaño del texto */
+    text-align: center; /* Alinea el texto del botón al centro */
+    text-decoration: none; /* Sin subrayado */
+    background-color: rgb(204, 81, 32); /* Naranja oscuro */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Interactivo */
+    width: auto; /* Ajusta automáticamente el ancho al contenido */ 
+    height: auto; /* Ajusta la altura según el texto */
+    white-space: nowrap; /* Evita el salto de línea del texto */
+    animation: pulsar 1.5s infinite ease-in-out; /* Pulso suave */
+    transition: background-color 0.3s ease-in-out; /* Cambio de color progresivo */
+}
+
+.saber-mas:hover {
+    background-color: rgba(204, 81, 32, 0.7); /* Color más suave al pasar el cursor */
 }
 
 /* Tablets */
