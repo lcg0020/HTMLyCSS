@@ -167,13 +167,13 @@ footer, .a-footer {
 }
 
 #btn-prev-quienes, #btn-prev-menu, #btn-prev-chef {
-    left: 10px; /* Coloca los botones 10px hacia la izquierda desde el borde del contenedor */
+    left: 30px; /* Coloca los botones 10px hacia la izquierda desde el borde del contenedor */
     top: 50%; /* Alinea los botones verticalmente al centro del contenedor */
     transform: translateY(-50%); /* Ajusta la posición vertical para asegurar que los botones estén perfectamente centrados */
 }
 
 #btn-next-quienes, #btn-next-menu, #btn-next-chef {
-    right: 10px; /* Coloca los botones 10px hacia la derecha desde el borde del contenedor */
+    right: 30px; /* Coloca los botones 10px hacia la derecha desde el borde del contenedor */
     top: 50%; /* Alinea los botones verticalmente al centro del contenedor */
     transform: translateY(-50%); /* Ajusta la posición vertical para que los botones queden perfectamente centrados */
 }
@@ -359,6 +359,12 @@ figure {
     transform: scale(1); /* Define un estado inicial sin transformaciones ni escalado */
 }
 
+.clip-image {
+    width: 300px; /* Define el ancho fijo de la imagen */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    clip-path: inset(5% round 20px); /* Recorta la imagen con bordes redondeados */
+}
+
 .precio {
     font-size: 0.8rem; /* Ajusta el tamaño del texto para hacerlo más pequeño, ideal para precios */
     padding-bottom: 1rem; /* Añade espacio debajo del precio para separarlo de otros elementos */
@@ -372,9 +378,9 @@ figure {
 }
 
 @keyframes pulsar {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+    0% { transform: scale(1); } /* Estado inicial: tamaño normal */
+    50% { transform: scale(1.1); } /* Aumenta un 10% de tamaño, creando el efecto de expansión */
+    100% { transform: scale(1); } /* Vuelve a su tamaño original */
 }
 
 .saber-mas {
@@ -398,6 +404,27 @@ figure {
 .saber-mas:hover {
     background-color: rgba(204, 81, 32, 0.7); /* Color más suave al pasar el cursor */
 }
+
+@keyframes deslizarArriba {
+    0% { 
+        opacity: 0; /* Inicialmente invisible */
+        transform: translateY(50px); /* Desplazado 50px hacia abajo */
+    }
+    100% { 
+        opacity: 1; /* Totalmente visible */
+        transform: translateY(0); /* Se coloca en su posición original */
+    }
+}
+
+.menu-item, .imagen {
+    opacity: 0; /* Inicialmente oculto */
+    animation: deslizarArriba 1.5s ease-in-out forwards; /* Aplica la animación */
+}
+
+/* Efecto escalonado */
+.menu-item:nth-child(1), .imagen:nth-child(1) { animation-delay: 0s; } /* Primer elemento aparece de inmediato */
+.menu-item:nth-child(2), .imagen:nth-child(2) { animation-delay: 0.3s; } /* Segundo elemento aparece tras 0,3 segundos */
+.menu-item:nth-child(3), .imagen:nth-child(3) { animation-delay: 0.6s; } /* Tercer elemento aparece tras 0,6 segundos */
 
 /* Tablets */
 @media (min-width: 768px) {
