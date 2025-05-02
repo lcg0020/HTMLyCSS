@@ -44,12 +44,15 @@ p {
     line-height: 1.6; /* Mejora la legibilidad al establecer una altura de línea cómoda */
 }
 
-.texto-foto{
-    text-shadow: 
-        -1px -1px 0 #000, /* Sombra arriba a la izquierda */
-        1px -1px 0 #000,  /* Sombra arriba a la derecha */
-        -1px 1px 0 #000,  /* Sombra abajo a la izquierda */
-        1px 1px 0 #000;   /* Sombra abajo a la derecha */
+.texto-foto {
+    color: #FFFFFF; /* Texto blanco para alto contraste */
+    text-shadow: 2px 2px 4px #000; /* Sombra para mejorar la separación */
+    
+    /* Fondo semitransparente detrás del texto */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con transparencia */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes suaves */
+    display: inline-block; /* Ajusta el tamaño al texto */
 }
 
 body {
@@ -86,6 +89,16 @@ footer, .a-footer {
     padding-left: 3rem; /* Añade un espacio interno amplio en el lado izquierdo para separar el contenido del borde */
     padding-right: 3rem; /* Proporciona un espacio interno similar en el lado derecho para mantener la simetría */
     padding-bottom: 2rem; /* Agrega un espacio interno en la parte inferior para crear separación vertical entre los elementos */
+}
+
+.text-container-carr {
+    padding-left: 3rem; /* Añade un espacio interno amplio en el lado izquierdo para separar el contenido del borde */
+    padding-right: 3rem; /* Proporciona un espacio interno similar en el lado derecho para mantener la simetría */
+    padding-bottom: 2rem; /* Agrega un espacio interno en la parte inferior para crear separación vertical entre los elementos */
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items:flex-start; /* Centra los elementos horizontalmente */
+    text-align: left; /* Asegura que el texto esté centrado */
 }
 
 .full-img-container {
@@ -198,7 +211,7 @@ footer, .a-footer {
 }
 
 .ul-nav .active a {
-    color: rgb(204, 81, 32); /* Cambia el color del enlace a rojo */
+    color: rgb(203, 60, 4); /* Cambia el color del enlace a rojo */
     font-weight: bold; /* Pone el texto de los elementos en negrita */
 }
 
@@ -209,7 +222,7 @@ footer, .a-footer {
 }
 
 .ul-nav li a:hover {
-    color:rgba(204, 81, 32, 0.5); /* Cambia el color al pasar el ratón */
+    color:rgb(141, 71, 43); /* Cambia el color al pasar el ratón */
 }
 
 .dos-columnas {
@@ -325,12 +338,12 @@ figure {
 }
 
 .link {
-    color: rgb(204, 81, 32); /* Aplica un color naranja oscuro al texto del enlace */
+    color: rgb(203, 60, 4); /* Aplica un color naranja oscuro al texto del enlace */
     text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
 }
 
 .link:hover {
-    color: rgba(204, 81, 32, 0.5); /* Cambia el color del enlace a un tono más claro al pasar el cursor, creando un efecto visual agradable */
+    color: rgba(141, 71, 43); /* Cambia el color del enlace a un tono más oscuro al pasar el cursor, creando un efecto visual agradable */
 }
 
 .link::after{
@@ -355,8 +368,8 @@ figure {
     height: 100%; /* Establece que el contenedor ocupe toda la altura disponible */
     background-color: rgb(255, 255, 255); /* Aplica un fondo blanco para un diseño limpio y claro */
     padding: 10px; /* Añade espacio interno alrededor de los elementos para evitar que se amontonen contra los bordes */
-    opacity: 1; /* Asegura que el contenedor sea completamente opaco */
     transform: scale(1); /* Define un estado inicial sin transformaciones ni escalado */
+    border-radius: 25px; /* Bordes redondeados*/
 }
 
 .clip-image {
@@ -389,7 +402,7 @@ figure {
     font-size: 1.2rem; /* Tamaño del texto */
     text-align: center; /* Alinea el texto del botón al centro */
     text-decoration: none; /* Sin subrayado */
-    background-color: rgb(204, 81, 32); /* Naranja oscuro */
+    background-color: rgb(203, 60, 4); /* Naranja oscuro */
     color: white; /* Texto en blanco */
     border: none; /* Sin bordes */
     border-radius: 5px; /* Bordes redondeados */
@@ -402,7 +415,7 @@ figure {
 }
 
 .saber-mas:hover {
-    background-color: rgba(204, 81, 32, 0.7); /* Color más suave al pasar el cursor */
+    background-color: rgba(141, 71, 43); /* Color más oscuro al pasar el cursor */
 }
 
 @keyframes deslizarArriba {
