@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         carousel.style.backgroundImage = `url(${imageSrc})`;
         currentIndex = (currentIndex + 1) % images.length;
     }
-    setInterval(changeImage, 5000);
+    setInterval(changeImage, 100000);
     changeImage();
 });
 

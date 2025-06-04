@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const imagesQuienes = [
         {
             src: "/img/rest1_small.png",
-            srcset: "/img/rest1_medium.png 768w, /img/rest1.png 1024w"
+            srcset: "/img/rest1_medium.png 768w, /img/rest1.webp 1024w"
         },
         {
             src: "/img/rest2_small.png",
