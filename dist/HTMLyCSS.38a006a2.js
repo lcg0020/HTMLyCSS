@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const imagesChef = [
         {
             src: "/img/chef1_small.webp",
-            srcset: "/img/chef1_medium.webp 768w, /img/chef1.webp 1024w"
+            srcset: "/img/chef1_medium.webp 768w, /img/chef1_large.webp 1024w"
         },
         {
             src: "/img/chef2_small.webp",
-            srcset: "/img/chef2_medium.webp 768w, /img/chef2.webp 1024w"
+            srcset: "/img/chef2_medium.webp 768w, /img/chef2_large.webp 1024w"
         }
     ];
     let currentIndexChef = 0;

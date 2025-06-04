@@ -4,20 +4,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnNextQuienes = document.getElementById("btn-next-quienes");
     const imagesQuienes = [
         {
-            src: "/img/rest1_small.png",
-            srcset: "/img/rest1_medium.png 768w, /img/rest1_large.webp 1024w"
+            src: "/img/rest1_small.webp",
+            srcset: "/img/rest1_medium.webp 768w, /img/rest1_large.webp 1024w"
         },
         {
-            src: "/img/rest2_small.png",
-            srcset: "/img/rest2_medium.png 768w, /img/rest2.png 1024w"
+            src: "/img/rest2_small.webp",
+            srcset: "/img/rest2_medium.webp 768w, /img/rest2.webp 1024w"
         },
         {
-            src: "/img/rest3_small.png",
-            srcset: "/img/rest3_medium.png 768w, /img/rest3.png 1024w"
+            src: "/img/rest3_small.webp",
+            srcset: "/img/rest3_medium.webp 768w, /img/rest3.webp 1024w"
         },
         {
-            src: "/img/rest4_small.png",
-            srcset: "/img/rest4_medium.png 768w, /img/rest4.png 1024w"
+            src: "/img/rest4_small.webp",
+            srcset: "/img/rest4_medium.webp 768w, /img/rest4.webp 1024w"
         }
     ];
     let currentIndexQuienes = 0;
