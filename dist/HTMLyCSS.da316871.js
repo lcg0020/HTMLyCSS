@@ -9,15 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         {
             src: "/img/rest2_small.webp",
-            srcset: "/img/rest2_medium.webp 768w, /img/rest2.webp 1024w"
+            srcset: "/img/rest2_medium.webp 768w, /img/rest2_large.webp 1024w"
         },
         {
             src: "/img/rest3_small.webp",
-            srcset: "/img/rest3_medium.webp 768w, /img/rest3.webp 1024w"
+            srcset: "/img/rest3_medium.webp 768w, /img/rest3_large.webp 1024w"
         },
         {
             src: "/img/rest4_small.webp",
-            srcset: "/img/rest4_medium.webp 768w, /img/rest4.webp 1024w"
+            srcset: "/img/rest4_medium.webp 768w, /img/rest4_large.webp 1024w"
         }
     ];
     let currentIndexQuienes = 0;
