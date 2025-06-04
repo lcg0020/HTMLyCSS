@@ -48,6 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
         currentIndex = (currentIndex + 1) % images.length;
     }
 
-    setInterval(changeImage, 15000);
+    setInterval(changeImage, 30000);
     changeImage();
 });
