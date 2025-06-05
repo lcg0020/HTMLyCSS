@@ -36,18 +36,36 @@ document.addEventListener("DOMContentLoaded", function () {
     
     let currentIndex = 0;
 
-    function changeImage() {
+    function loadImage(index) {
         let screenWidth = window.innerWidth;
 
-        // Selecciona la imagen correcta según el tamaño de pantalla
-        let imageSrc = screenWidth < 768 ? images[currentIndex].small :
-                       screenWidth < 1024 ? images[currentIndex].medium :
-                       images[currentIndex].large;
+        let imageSrc = screenWidth < 768 ? images[index].small :
+                       screenWidth < 1024 ? images[index].medium :
+                       images[index].large;
 
-        carousel.style.backgroundImage = `url(${imageSrc})`;
+        let img = new Image();
+        img.src = imageSrc;
+        img.loading = "lazy"; 
+        img.onload = function () {
+            carousel.style.backgroundImage = `url(${imageSrc})`;
+        };
+    }
+
+    function changeImage() {
+        loadImage(currentIndex);
         currentIndex = (currentIndex + 1) % images.length;
     }
 
-    setInterval(changeImage, 100000);
-    changeImage();
+    let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                changeImage();
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    observer.observe(carousel);
+
+    setInterval(changeImage, 15000);
 });

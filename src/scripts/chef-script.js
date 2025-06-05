@@ -16,10 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentIndexChef = 0;
 
-    // Función para actualizar la imagen
+    // Aplicar lazy loading en la imagen
+    imagen_chef.setAttribute("loading", "lazy");
+
+    // Función para actualizar la imagen 
     function updateImageChef() {
-        imagen_chef.src = imagesChef[currentIndexChef].src;
-        imagen_chef.srcset = imagesChef[currentIndexChef].srcset; 
+        let img = new Image();
+        img.src = imagesChef[currentIndexChef].src;
+        img.srcset = imagesChef[currentIndexChef].srcset;
+        img.loading = "lazy";
+
+        img.onload = function () {
+            imagen_chef.src = img.src;
+            imagen_chef.srcset = img.srcset;
+        };
     }
 
     // Evento para el botón "Atrás"

@@ -32,10 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentIndexMenu = 0;
 
+    // Aplicar lazy loading a la imagen
+    imagen_menu.setAttribute("loading", "lazy");
+
     // Función para actualizar la imagen
     function updateImageMenu() {
-        imagen_menu.src = imagesMenu[currentIndexMenu].src;
-        imagen_menu.srcset = imagesMenu[currentIndexMenu].srcset; 
+        let img = new Image();
+        img.src = imagesMenu[currentIndexMenu].src;
+        img.srcset = imagesMenu[currentIndexMenu].srcset;
+        img.loading = "lazy"; 
+
+        img.onload = function () {
+            imagen_menu.src = img.src;
+            imagen_menu.srcset = img.srcset;
+        };
     }
 
     // Evento para el botón "Atrás"
