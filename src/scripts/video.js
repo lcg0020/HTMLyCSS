@@ -9,6 +9,8 @@ document.querySelectorAll(".video-thumbnail").forEach(thumbnail => {
         iframe.referrerPolicy = "strict-origin-when-cross-origin";
         iframe.allowFullscreen = true;
 
+        // Mantener el tamaño del contenedor antes de reemplazar
+        this.parentNode.style.minHeight = "315px";
         this.parentNode.replaceChild(iframe, this);
     });
 });
